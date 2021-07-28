@@ -1,0 +1,31 @@
+{
+  "name": "dirtywords_filter",
+  "version": "1.0.1",
+  "description": "simple bad words filter multi-lans",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ./test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daqnext/badwords-filter.git"
+  },
+  "keywords": [
+    "bad",
+    "words",
+    "badwords",
+    "filter"
+  ],
+  "author": "Leo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/daqnext/badwords-filter/issues"
+  },
+  "homepage": "https://github.com/daqnext/badwords-filter#readme",
+  "devDependencies": {
+    "mocha": "^9.0.3"
+  },
+  "dependencies": {
+    "naughty-words": "^1.2.0"
+  }
+}
