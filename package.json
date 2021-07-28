@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/daqnext/badwords-filter.git"
+    "url": "git+https://github.com/daqnext/dirtywords_filter.git"
   },
   "keywords": [
     "bad",
@@ -19,9 +19,9 @@
   "author": "Leo",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/daqnext/badwords-filter/issues"
+    "url": "https://github.com/daqnext/dirtywords_filter/issues"
   },
-  "homepage": "https://github.com/daqnext/badwords-filter#readme",
+  "homepage": "https://github.com/daqnext/dirtywords_filter#readme",
   "devDependencies": {
     "mocha": "^9.0.3"
   },
