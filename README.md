@@ -1,5 +1,5 @@
-# badwords-filter
-simple bad words filter 
+# dirtywords_filter
+## simple bad words filter 
 
 ## languages
 ### ```Arabic,Chinese,Czech,Danish,Dutch,English,Esperanto,```
@@ -9,5 +9,6 @@ simple bad words filter
 
 
 ## how to use 
+### ``` npm install dirtywords_filter ```
 ### ``` const dwf = require('dirtywords_filter'); ```
 ### ``` console.log(dwf.clean("fucking bad!")); ```
