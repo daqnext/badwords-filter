@@ -2,7 +2,10 @@
 simple bad words filter 
 
 ## languages
-### ```Arabic,Chinese,Czech,Danish,Dutch,English,Esperanto,Filipino,Finnish,French,French (CA),German,Hindi,Hungarian,Italian,Japanese,Kabyle,Klingon,Korean,Norwegian,Persian,Polish,Portuguese,Russian,Spanish,Swedish,Thai,Turkish]```
+### ```Arabic,Chinese,Czech,Danish,Dutch,English,Esperanto,```
+### ```Filipino,Finnish,French,French (CA),German,Hindi,Hungarian,```
+### ```Italian,Japanese,Kabyle,Klingon,Korean,Norwegian,Persian,```
+### ```Polish,Portuguese,Russian,Spanish,Swedish,Thai,Turkish]```
 
 
 ## how to use 
