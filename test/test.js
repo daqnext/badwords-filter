@@ -1,12 +1,12 @@
-const badwfilter = require('../main');
+const dwf = require('../main');
  
 describe('dirty words', function() {
     it('filter of dirty words', function() {
         
-        console.log(badwfilter.clean(""));
-        console.log(badwfilter.clean(" "));
-        console.log(badwfilter.clean("fucking bad!"));
-        console.log(badwfilter.clean("他妈的"));
+        console.log(dwf.clean(""));
+        console.log(dwf.clean(" "));
+        console.log(dwf.clean("fucking bad!"));
+        console.log(dwf.clean("他妈的"));
         
     });
   });
