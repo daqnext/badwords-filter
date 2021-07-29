@@ -14,21 +14,28 @@ class dirtyWordFilter{
         }
     }
 
-    clean(badwords) {
+    clean(badwordsinput) {
         let hitwords=[];
-        for(var i=0;i<badwords.length+1;i++){
-            for(var j=i;j<badwords.length+1;j++){
-                if(dirtyWordFilter.allwords.includes(badwords.substring(i, j))){
-                    hitwords.push(badwords.substring(i, j));
+        let badsplits=badwordsinput.split(" ");
+
+        badsplits.forEach(badwords=>{
+            for(var i=0;i<badwords.length+1;i++){
+                for(var j=i;j<badwords.length+1;j++){
+                    if(dirtyWordFilter.allwords.includes(badwords.substring(i, j))){
+                        hitwords.push(badwords.substring(i, j));
+                    }
+                    if(j>10){
+                        break;
+                    }
                 }
             }
-        }
-        
+        });
+
         hitwords.forEach(element => {
-            badwords=badwords.replace(element,"**");
+            badwordsinput=badwordsinput.replace(element,"**");
         });
  
-        return badwords;
+        return badwordsinput;
     }
 
 } 
