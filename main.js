@@ -2,7 +2,7 @@ const naughtywords =require('naughty-words')
 const en=require('./words/en.js')
 const cn=require('./words/cn.js')
 
-//const trickywords=["dam","hello","cu","am","ass"]
+const goodwords=["cu","am"];
 
 const english = /^[A-Za-z0-9]*$/;
 
@@ -19,9 +19,7 @@ class dirtyWordFilter{
             dirtyWordFilter.allwords.concat(naughtywords[key]);
         }
     }
-
-
-
+ 
      splitMulti(str, tokens){
         var tempChar = tokens[0]; // We can use the first token as a temporary join character
         for(var i = 1; i < tokens.length; i++){
@@ -33,7 +31,7 @@ class dirtyWordFilter{
 
     clean(badwordsinput) {
         let hitwords=[];
-        let badsplits= this.splitMulti(badwordsinput,[" ", ".",",",":","'","\"","，","!"])   
+        let badsplits= this.splitMulti(badwordsinput,[" ", ".",",",":","'","\"","，","!","?","@"])   
 
         badsplits.forEach(badwords=>{
             if(english.test(badwords)){
@@ -58,10 +56,11 @@ class dirtyWordFilter{
         });
 
         hitwords.forEach(element => {
-            badwordsinput=badwordsinput.replace(element,"**");
+            if(!goodwords.includes(element)){
+                badwordsinput=badwordsinput.replace(element,"**");
+            }
+            
         });
-
-        //console.log(hitwords);
  
         return badwordsinput;
     }
